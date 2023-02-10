@@ -2,7 +2,7 @@
   <div class="accordeon__item" :class="{ active: isActive }" @click="toggleAccordion">
     <div class="accordeon__item-title">{{ title }}</div>
     <Transition>
-      <div class="accordeon__item-body">
+      <div v-show="isOpen" class="accordeon__item-body">
         <slot></slot>
       </div>
     </Transition>
