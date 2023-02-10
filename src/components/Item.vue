@@ -2,7 +2,7 @@
   <div class="accordeon__item" :class="{ active: isActive }" @click="toggleAccordion">
     <div class="accordeon__item-title">{{ title }}</div>
     <Transition>
-      <div v-show="isOpen" class="accordeon__item-body">
+      <div class="accordeon__item-body">
         <slot></slot>
       </div>
     </Transition>
@@ -47,6 +47,7 @@ export default {
 
       &::after {
         transform: rotate(315deg);
+        margin-top: 10px;
       }
     }
   }
