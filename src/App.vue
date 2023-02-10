@@ -2,11 +2,11 @@
   <div class="wrapper">
     <div class="accordeon">
       <AccordeonItem :title="'The analysis'">
-        <ul>
-          <li>Do you have one user in more than one variant of the same AB test?</li>
-          <li>Are you users actually getting the treatment we expect them to get?</li>
-          <li>Do we have enough users in our AB test? Are those users representative for the total population?</li>
-        </ul>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel doloribus sequi id quam omnis sit dignissimos
+          exercitationem libero reprehenderit tenetur sapiente dolores, atque architecto nobis earum alias saepe
+          corrupti quas!
+        </p>
       </AccordeonItem>
 
       <AccordeonItem :title="'To take into account on user level data'">
@@ -58,6 +58,7 @@ export default {
 
 body {
   font-family: "Montserrat", sans-serif;
+  line-height: 24;
 }
 
 ul {
